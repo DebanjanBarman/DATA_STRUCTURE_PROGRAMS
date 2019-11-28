@@ -1,5 +1,4 @@
-// Not Completed 
-
+// Not Completed
 
 #include <iostream>
 using namespace std;
