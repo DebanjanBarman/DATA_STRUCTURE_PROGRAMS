@@ -13,7 +13,7 @@ int main()
     {
         cin >> arr[i];
     }
-    cout << "Liist of the Elements : \n";
+    cout << "List of the Elements : \n";
 
     for (int i = 0; i < len; i++)
     {
