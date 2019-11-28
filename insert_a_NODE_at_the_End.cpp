@@ -6,13 +6,13 @@ struct node
     struct node *next;
 } * start;
 
-class single_llist
+class list
 {
 public:
     node *create_node(int);
     void insert_last();
     void display();
-    single_llist()
+    list()
     {
         start = NULL;
     }
@@ -21,7 +21,7 @@ public:
 int main()
 {
     int choice, nodes, element, position, i;
-    single_llist sl;
+    list sl;
     start = NULL;
     while (1)
     {
@@ -49,7 +49,7 @@ int main()
     }
 }
 
-node *single_llist::create_node(int value)
+node *list::create_node(int value)
 {
     struct node *temp, *s;
     temp = new (struct node);
@@ -66,7 +66,7 @@ node *single_llist::create_node(int value)
     }
 }
 
-void single_llist::insert_last()
+void list::insert_last()
 {
     int value;
     cout << "Enter the value to be inserted: ";
@@ -83,7 +83,7 @@ void single_llist::insert_last()
     cout << "Element Inserted at last" << endl;
 }
 
-void single_llist::display()
+void list::display()
 {
     struct node *temp;
     if (start == NULL)
