@@ -92,11 +92,11 @@ void list::display()
         return;
     }
     temp = start;
-    cout << "Elements of list are: " << endl;
+    cout << "Elements of list are: \n"
+         << endl;
     while (temp != NULL)
     {
-        cout << temp->info << "->";
+        cout << temp->info << "\t";
         temp = temp->next;
     }
-    cout << "NULL" << endl;
 }
