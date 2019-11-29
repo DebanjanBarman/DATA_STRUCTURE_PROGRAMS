@@ -29,7 +29,7 @@ main()
     start = NULL;
     while (1)
     {
-        cout << "_____MENU_____\n\n1__Insert Node at beginning\n2__Insert node at last\n3__Insert node at position\n5__Delete a Particular Node\n8__Display Linked List\n10__Exit\n\n >>>";
+        cout << "_____MENU_____\n\n1__Insert Node at beginning\n2__Insert node at last\n3__Insert node at position\n4__Delete a Particular Node\n5__Display Linked List\n6__Exit\n\n >>>";
         cin >> choice;
         switch (choice)
         {
@@ -48,16 +48,16 @@ main()
             sl.insert_pos();
             cout << endl;
             break;
-        case 5:
+        case 4:
             cout << "Delete a particular node: " << endl;
             sl.delete_pos();
             break;
-        case 8:
+        case 5:
             cout << "Display elements of link list" << endl;
             sl.display();
             cout << endl;
             break;
-        case 10:
+        case 6:
             cout << "Exiting..." << endl;
             exit(1);
             break;
