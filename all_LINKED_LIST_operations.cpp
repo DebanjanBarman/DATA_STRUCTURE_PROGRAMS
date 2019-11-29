@@ -219,8 +219,7 @@ void list::display()
         return;
     }
     temp = start;
-    cout << "Elements of list are: \n"
-         << endl;
+    cout << "Elements of list are: \n";
     while (temp != NULL)
     {
         cout << temp->info << "\t";
