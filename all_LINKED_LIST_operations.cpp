@@ -60,7 +60,6 @@ main()
         case 6:
             cout << "Exiting..." << endl;
             exit(1);
-            break;
         default:
             cout << "Wrong choice" << endl;
         }
